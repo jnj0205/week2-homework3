@@ -6,38 +6,35 @@
 
 
 def negative_numbers (nums):
-numbers = [1, 3, 5, 7, 8]
-for num in x:
-     x * (-1)
-print(negative_numbers)
+    answer = []
+    for num in nums:
+        answer.append(num * (-1))
+    return answer
+print(negative_numbers ([1, 2, 3, 4, 5]))
 
 
-#Ex. 2
-#nums = [100, 534, 32, 15, 77, 222, 788, 345, 75645, 22]
-#Expected Output: [-100, -534, -32, -15, -77, -222, -788, -345, -75645, -22]#
+#print(negative_numbers([100, 534, 32, 15, 77, 222, 788, 345, 75645, 22]))
+
+
 
 
 ##Exercise 2#########
 ###
 #Given a string, return a list of all of the digits in the string.
 #Ex. 1
-#address = "123 Real Street, Apt. 2, Springfield, OR 43498"
+
 #Expected Output: ['1', '2', '3', '2', '4', '3', '4', '9', '8']
 
 #Ex. 2
 #sentence = "My phone number is (555) 555-4321"
 #Expected Output: ['5', '5', '5', '5', '5', '5', '4', '3', '2', '1']
 #
-def only_number(number):
-        if number == digit:
-            print(number)
-    
-        else:
-             skip
+address = "123 Real Street, Apt. 2, Springfield, OR 43498" 
 
-print(number)
-        
-       
+def only_number(address):
+    return [i for i in address if i.isdigit()]        
+only_number(address)   
+           
  ###
   ##Given a string digits, return a string of the digits + 1
 
@@ -50,7 +47,7 @@ print(number)
 #Expected Output: '100'
 
 def f(x):
-    return x + 1
+    return str(int(x) + 1)
 
-y = f(99)
-print(y)
+y = f('99')
+print(str(y))
