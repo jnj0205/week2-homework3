@@ -33,14 +33,19 @@ address = "123 Real Street, Apt. 2, Springfield, OR 43498"
 
 def only_number(address):
     return [i for i in address if i.isdigit()]        
-only_number(address)   
-           
+result = only_number(address)
+print(result)
  ###
   ##Given a string digits, return a string of the digits + 1
 
 ##Ex. 1
 #digits = '123'
 #Expected Output: '124'
+def f(x):
+    return str(int(x) + 1)
+y = f('123')
+print(str(y))
+
 
 #Ex. 2
 #digits = '99'
@@ -48,6 +53,5 @@ only_number(address)
 
 def f(x):
     return str(int(x) + 1)
-
 y = f('99')
 print(str(y))
